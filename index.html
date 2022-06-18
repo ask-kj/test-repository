@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <title>サンプル</title>
+    <!-- リセットcss -->
+    <link rel="stylesheet" href="css/destyle.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Luminous.css -->
+    <link rel="stylesheet" href="css/luminous-basic.min.css">
+    <!-- swiper.css -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="title wow animate__heartBeat" data-wow-iteration="infinite"><a href="index.html">Cat's</a></h1>
+            <nav class="nav">
+                <a href="#introduce">INTRODUCE</a>
+                <a href="#ku">KU</a>
+                <a href="#pon">PON</a>
+                <a href="#cosmo">COSMO</a>
+            </nav>
+        </header>
+
+        <!-- main-visual -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/kuu-1000.png" alt="くろねこ"></div>
+                <div class="swiper-slide"><img src="img/ponn-1000.png" alt="さばねこ"></div>
+                <div class="swiper-slide"><img src="img/kosumo-1000.png" alt="くろねこ"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ３匹の紹介部分 -->
+        <section id="introduce">
+            <h2 class="sub-title wow animate__fadeInUp" data-wow-delay=".5s">INTRODUCE</h2>
+            <!-- 3枚の紹介写真 -->
+            <div class="introduce wow animate__fadeInUp" data-wow-delay=".5s">
+                <div class="introduce__item">
+                    <a class="luminous" href="img/kuu-1000.png">
+                        <img src="img/kuu-1000.png" alt="黒猫">
+                    </a>
+                    <p class="introduce__item__name">KU</p>
+                </div>
+
+                <div class="introduce__item">
+                    <a class="luminous" href="img/ponn-1000.png">
+                        <img src="img/ponn-1000.png" alt="鯖猫">
+                    </a>
+                    <p class="introduce__item__name">PON</p>
+                </div>
+
+                <div class="introduce__item">
+                    <a class="luminous" href="img/kosumo-1000.png">
+                        <img src="img/kosumo-1000.png" alt="長毛黒猫">
+                    </a>
+                    <p class="introduce__item__name">COSMO</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 黒猫紹介 -->
+        <section id="ku" class="content wow animate__fadeInBottomLeft" data-wow-delay=".5s">
+            <div class="content__item">
+                <h2 class="content__item__sub-title">KU（空）</h2>
+                <p class="content__item__text">オス</p>
+                <p class="content__item__text">8歳</p>
+            </div>
+
+            <div class="content__img">
+                <img src="img/kuu-1000.png" alt="黒猫">
+                <img src="img/kuu-1000.png" alt="黒猫">
+                <img src="img/kuu-1000.png" alt="黒猫">
+            </div>
+        </section>
+
+        <!-- 鯖猫紹介 -->
+        <section id="pon" class="content wow animate__fadeInBottomRight" data-wow-delay=".5s">
+            <div class="content__img">
+                <img src="img/ponn-1000.png" alt="鯖猫">
+                <img src="img/ponn-1000.png" alt="鯖猫">
+                <img src="img/ponn-1000.png" alt="鯖猫">
+            </div>
+                <div class="content__item">
+                <h2 class="content__item__sub-title">PON<br>（ポン）</h2>
+                <p class="content__item__text">オス</p>
+                <p class="content__item__text">4歳</p>
+            </div>
+        </section>
+
+        <!-- 長毛黒猫紹介 -->
+        <section id="cosmo" class="content wow animate__fadeInBottomLeft" data-wow-delay=".5s">
+            <div class="content__item">
+                <h2 class="content__item__sub-title">COSMO<br>（コスモ）</h2>
+                <p class="content__item__text">オス</p>
+                <p class="content__item__text">1歳</p>
+            </div>
+
+            <div class="content__img">
+                <img src="img/kosumo-1000.png" alt="長毛黒猫">
+                <img src="img/kosumo-1000.png" alt="長毛黒猫">
+                <img src="img/kosumo-1000.png" alt="長毛黒猫">
+            </div>
+        </section>
+
+        <!-- js -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            wow = new WOW(
+                {
+                    animateClass: 'animate__animated'
+                }
+                )
+                wow.init();
+        </script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/luminous.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
