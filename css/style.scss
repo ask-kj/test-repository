@@ -9,7 +9,7 @@ img {
 /*======================================
 PC用
 =======================================*/
-@media screen and (min-width:700px) {
+@media screen and (min-width:900px) {
 /*header*/
 .header {
     align-items: center;
@@ -130,7 +130,7 @@ swiperのcss
 /*===========================================
 スマホ用
 ============================================*/
-@media screen and (max-width:699px) {
+@media screen and (max-width:899px) {
     /*header*/
 .header {
     align-items: center;
