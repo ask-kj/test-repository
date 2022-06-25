@@ -47,19 +47,21 @@ PC用
     object-position: 100% 40%; }
 
   /*introduce*/
+  #introduce {
+    background-color: #baeeee; }
+
   .sub-title {
     color: #49a2eb;
     font-size: 3rem;
     font-weight: bold;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 50px;
     text-align: center;
-    padding-top: 50px; }
+    padding: 200px 0 100px 0; }
 
   .introduce {
     display: flex;
     justify-content: center;
-    margin: 50px auto; }
+    padding: 50px auto; }
     .introduce__item img {
       width: 70%;
       height: 70%;
@@ -69,7 +71,8 @@ PC用
       .introduce__item img:hover {
         opacity: .5; }
     .introduce__item {
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 200px; }
       .introduce__item__name {
         font-size: 3rem;
         font-weight: bold; }
@@ -85,17 +88,18 @@ PC用
     margin: 200px 50px;
     padding-top: 100px; }
     .content__item, .content2__item {
-      width: 18%;
+      width: 20%;
       font-size: 2rem; }
       .content__item__sub-title, .content2__item__sub-title {
         font-size: 3rem;
         font-weight: bold; }
       .content__item__text, .content2__item__text {
-        margin-left: 25px; }
+        font-size: 2rem;
+        margin-left: 15px; }
     .content__img, .content2__img {
       display: flex;
       justify-content: space-between;
-      width: 80%; }
+      width: 78%; }
       .content__img img, .content2__img img {
         width: calc(90% / 3); }
 
@@ -104,6 +108,21 @@ PC用
     flex-direction: row; }
     .content2__item {
       order: 1; } }
+/*=======================================
+footer
+==========================================*/
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px; }
+  .footer__title {
+    font-size: 2rem; }
+  .footer__nav {
+    display: flex;
+    gap: 20px; }
+
 /*===========================================
 スマホ用
 ============================================*/

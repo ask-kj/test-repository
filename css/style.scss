@@ -55,19 +55,21 @@ swiperのcss
 }
 
 /*introduce*/
+#introduce {
+    background-color: rgb(186, 238, 238);
+}
 .sub-title {
     color: rgb(73, 162, 235);
     font-size: 3rem;
     font-weight: bold;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 50px;
     text-align: center;
-    padding-top: 50px;
+    padding: 200px 0 100px 0 ;
 }
 .introduce {
     display: flex;
     justify-content: center;
-    margin: 50px auto;
+    padding: 50px auto;
 
     &__item img {
         width: 70%;
@@ -81,6 +83,7 @@ swiperのcss
         }
     &__item {
         text-align: center;
+        padding-bottom: 200px;
         &__name {
             font-size: 3rem;
             font-weight: bold;
@@ -100,20 +103,21 @@ swiperのcss
     margin: 200px 50px;
     padding-top: 100px;
     &__item {
-        width: 18%;
+        width: 20%;
         font-size: 2rem;
         &__sub-title {
             font-size: 3rem;
             font-weight: bold;
         }
         &__text {
-            margin-left: 25px;
+            font-size: 2rem;
+            margin-left: 15px;
         }
     }
     &__img {
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        width: 78%;
         & img {
             width: calc(90% / 3);
         }
@@ -126,6 +130,23 @@ swiperのcss
       order: 1;
     }
 }
+}
+/*=======================================
+footer
+==========================================*/
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    &__title {
+        font-size: 2rem;
+    }
+    &__nav {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 /*===========================================
