@@ -224,4 +224,11 @@ footer
       width: 100%; }
       .content2__img img {
         width: 100%;
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem; }
+
+  .footer {
+    flex-direction: column;
+    overflow: hidden; }
+    .footer__nav {
+      flex-direction: column;
+      margin-top: 20px; } }

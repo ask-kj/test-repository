@@ -277,4 +277,12 @@ swiperのcss
         }
     }
 }
+.footer {
+    flex-direction: column;
+    overflow: hidden;
+    &__nav {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
 }
