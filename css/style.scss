@@ -43,20 +43,7 @@ swiperのcss
     text-align: center;
     font-size: 18px;
     background: #fff;
-   
-/* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+
 }
 
 .swiper-slide img {
@@ -64,11 +51,12 @@ swiperのcss
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 100% 40%;
 }
 
 /*introduce*/
 .sub-title {
-    color: blue;
+    color: rgb(73, 162, 235);
     font-size: 3rem;
     font-weight: bold;
     margin-top: 200px;
@@ -87,6 +75,9 @@ swiperのcss
         object-fit: cover;
         border-radius: 50%;
         padding: 1rem;
+        &:hover{
+          opacity: .5;
+        }
         }
     &__item {
         text-align: center;
@@ -99,6 +90,9 @@ swiperのcss
 
 
 /*猫紹介*/
+.lum-lightbox-inner img {
+    max-width: 50%;
+}
 .content, .content2 {
     display: flex;
     justify-content: space-between;
@@ -125,6 +119,13 @@ swiperのcss
         }
     }
 }
+.content2 {
+  display: flex;
+  flex-direction: row;
+    &__item{
+      order: 1;
+    }
+}
 }
 
 /*===========================================
@@ -134,20 +135,19 @@ swiperのcss
     /*header*/
 .header {
     align-items: center;
-    margin: 30px 50px;
 }
 
 .title {
     font-size: 3rem;
     font-weight: bold;
-    margin-top: 50px;
+    margin: 50px 0 0 50px;
 }
 
 .nav {
     display: flex;
     justify-content: flex-end;
-    gap: 2rem;
-    margin: 50px auto;
+    gap: 1rem;
+    margin: 50px 10px 50px 0;
 }
 
 
@@ -166,20 +166,6 @@ swiperのcss
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-/* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 
 .swiper-slide img {
@@ -191,11 +177,10 @@ swiperのcss
 
 /*introduce*/
 .sub-title {
-    color: blue;
+    color: rgb(73, 162, 235);
     font-size: 3rem;
     font-weight: bold;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin: 200px 0 100px 0;
     text-align: center;
     padding-top: 50px;
 }
@@ -207,6 +192,9 @@ swiperのcss
             height: 25rem;
             border-radius: 50%;
             object-fit: cover;
+            &:hover {
+              opacity: .5;
+            }
         }
         &__item {
             text-align: center;
