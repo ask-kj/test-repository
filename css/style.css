@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
-  font-size: 24px;
-  background-color: antiquewhite; }
+  background-color: antiquewhite;
+  font-size: 24px; }
 
 img {
   width: 100%; }
@@ -23,91 +23,131 @@ PC用
 
   .nav {
     display: flex;
+    font-size: 2rem;
     gap: 2rem; }
+    .nav a {
+      display: inline-block;
+      text-decoration: none;
+      position: relative; }
+      .nav a::after {
+        background: #7c7272;
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 5px;
+        transform: scale(0, 1);
+        transform-origin: right top;
+        transition: transform .3s;
+        width: 100%; }
+      .nav a:hover::after {
+        transform-origin: left top;
+        transform: scale(1, 1); }
 
   /*main-visual*/
   /*=======================================
   swiperのcss
   ========================================*/
   .swiper {
-    width: 100%;
     height: 650px;
-    overflow: hidden; }
+    overflow: hidden;
+    width: 100%; }
 
   .swiper-slide {
-    text-align: center;
+    background: #fff;
     font-size: 18px;
-    background: #fff; }
+    text-align: center; }
 
   .swiper-slide img {
     display: block;
-    width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 100% 40%; }
+    object-position: 100% 40%;
+    width: 100%; }
 
   /*introduce*/
   #introduce {
-    background-color: #baeeee; }
+    background-color: #f4d6af; }
 
   .sub-title {
-    color: #49a2eb;
+    color: #e99631;
     font-size: 3rem;
     font-weight: bold;
     margin-top: 50px;
+    padding: 80px 0 50px 0;
     text-align: center;
-    padding: 200px 0 100px 0; }
+    text-shadow: 4px 4px #fff; }
 
   .introduce {
     display: flex;
     justify-content: center;
     padding: 50px auto; }
     .introduce__item img {
-      width: 70%;
+      border-radius: 50%;
       height: 70%;
       object-fit: cover;
-      border-radius: 50%;
-      padding: 1rem; }
+      padding: 1rem;
+      width: 70%; }
       .introduce__item img:hover {
         opacity: .5; }
     .introduce__item {
       text-align: center;
-      padding-bottom: 200px; }
+      padding-bottom: 40px; }
       .introduce__item__name {
         font-size: 3rem;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: transform 1s; }
+        .introduce__item__name:hover {
+          transform: rotate(-15deg); }
 
   /*猫紹介*/
-  .lum-lightbox-inner img {
-    max-width: 50%; }
-
-  .content, .content2 {
-    display: flex;
-    justify-content: space-between;
+  .content__item {
     align-items: center;
-    margin: 200px 50px;
-    padding-top: 100px; }
-    .content__item, .content2__item {
-      width: 20%;
-      font-size: 2rem; }
-      .content__item__sub-title, .content2__item__sub-title {
+    display: flex;
+    margin: 200px 100px;
+    justify-content: space-between;
+    position: relative; }
+    .content__item__about {
+      width: 35%; }
+      .content__item__about a {
+        color: #4646ed;
+        text-decoration: underline; }
+      .content__item__about__sub-title {
         font-size: 3rem;
         font-weight: bold; }
-      .content__item__text, .content2__item__text {
+      .content__item__about__text {
         font-size: 2rem;
-        margin-left: 15px; }
-    .content__img, .content2__img {
-      display: flex;
-      justify-content: space-between;
-      width: 78%; }
-      .content__img img, .content2__img img {
-        width: calc(90% / 3); }
-
-  .content2 {
+        margin: 10px 0 0 25px; }
+      .content__item__about__text2 {
+        font-size: 2rem;
+        margin: 15px 0 0 25px; }
+        .content__item__about__text2:hover {
+          opacity: .5; }
+    .content__item__coment {
+      font-size: 1.5rem;
+      line-height: 35px;
+      width: 45%; }
+      .content__item__coment__title {
+        font-size: 2rem;
+        font-weight: bold; }
+    .content__item__img {
+      border-radius: 40% 70% 35% 60%/50%;
+      height: 350px;
+      object-fit: cover;
+      position: absolute;
+      top: -100px;
+      left: 330px;
+      width: 350px; }
+  .content__img {
+    align-items: center;
     display: flex;
-    flex-direction: row; }
-    .content2__item {
-      order: 1; } }
+    margin-bottom: 50px;
+    justify-content: space-between; }
+    .content__img img:hover {
+      opacity: .5; }
+
+  .lum-lightbox-inner img {
+    max-width: 40%; } }
 /*=======================================
 footer
 ==========================================*/
@@ -116,7 +156,7 @@ footer
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 50px; }
+  padding: 40px 50px  20px 50px; }
   .footer__title {
     font-size: 2rem; }
   .footer__nav {

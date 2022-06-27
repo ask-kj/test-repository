@@ -1,6 +1,6 @@
 body {
-    font-size: 24px;
     background-color: antiquewhite;
+    font-size: 24px;
 }
 img {
     width: 100%;
@@ -25,7 +25,29 @@ PC用
 
 .nav {
     display: flex;
+    font-size: 2rem;
     gap: 2rem;
+    & a {
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+        &::after {
+            background: rgb(124, 114, 114);
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            height: 5px;
+            transform: scale(0, 1);
+            transform-origin: right top;
+            transition: transform .3s;
+            width: 100%;
+        }
+        &:hover::after {
+            transform-origin: left top;
+            transform: scale(1, 1);
+        }
+    }
 }
 
 /*main-visual*/
@@ -34,102 +56,133 @@ swiperのcss
 ========================================*/
 
 .swiper {
-    width: 100%;
     height: 650px;
     overflow: hidden;
+    width: 100%;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
     background: #fff;
-
+    font-size: 18px;
+    text-align: center;
 }
 
 .swiper-slide img {
     display: block;
-    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 100% 40%;
+    width: 100%;
 }
 
 /*introduce*/
 #introduce {
-    background-color: rgb(186, 238, 238);
+    background-color: rgb(244, 214, 175);
 }
 .sub-title {
-    color: rgb(73, 162, 235);
+    color: rgb(233, 150, 49);
     font-size: 3rem;
     font-weight: bold;
     margin-top: 50px;
+    padding: 80px 0 50px 0 ;
     text-align: center;
-    padding: 200px 0 100px 0 ;
+    text-shadow: 4px 4px #fff;
 }
 .introduce {
     display: flex;
     justify-content: center;
     padding: 50px auto;
-
     &__item img {
-        width: 70%;
+        border-radius: 50%;
         height: 70%;
         object-fit: cover;
-        border-radius: 50%;
         padding: 1rem;
+        width: 70%;
         &:hover{
-          opacity: .5;
+            opacity: .5;
         }
         }
     &__item {
         text-align: center;
-        padding-bottom: 200px;
+        padding-bottom: 40px;
         &__name {
             font-size: 3rem;
             font-weight: bold;
+            transition: transform 1s;
+            &:hover {
+                transform: rotate(-15deg);
+            }
         }
     }
 }
 
 
 /*猫紹介*/
-.lum-lightbox-inner img {
-    max-width: 50%;
-}
-.content, .content2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 200px 50px;
-    padding-top: 100px;
+.content {
     &__item {
-        width: 20%;
-        font-size: 2rem;
-        &__sub-title {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        &__text {
-            font-size: 2rem;
-            margin-left: 15px;
-        }
-    }
-    &__img {
+        align-items: center;
         display: flex;
+        margin: 200px 100px;
         justify-content: space-between;
-        width: 78%;
+        position: relative;
+        &__about {
+            width: 35%;
+            & a {
+                color: rgb(70, 70, 237);
+                text-decoration: underline;
+            }
+            &__sub-title {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            &__text {
+                font-size: 2rem;
+                margin: 10px 0 0 25px;
+            }
+            &__text2 {
+                font-size: 2rem;
+                margin: 15px 0 0 25px;
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+        &__coment {
+            font-size: 1.5rem;
+            line-height: 35px;
+            width: 45%;
+            &__title {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+        &__img {
+            border-radius: 40% 70% 35% 60%/50%;
+            height: 350px;
+            object-fit: cover;
+            position: absolute;
+            top: -100px;
+            left: 330px;
+            width: 350px;
+        }
+    }
+
+    &__img {
+        align-items: center;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: space-between;
         & img {
-            width: calc(90% / 3);
+            &:hover {
+                opacity: .5;
+            }
         }
     }
 }
-.content2 {
-  display: flex;
-  flex-direction: row;
-    &__item{
-      order: 1;
-    }
+.lum-lightbox-inner img {
+    max-width: 40%;
 }
+
 }
 /*=======================================
 footer
@@ -139,7 +192,7 @@ footer
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 40px 50px  20px 50px;
     &__title {
         font-size: 2rem;
     }
