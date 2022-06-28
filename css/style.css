@@ -99,6 +99,8 @@ PC用
         transition: transform 1s; }
         .introduce__item__name:hover {
           transform: rotate(-15deg); }
+    .introduce .lean {
+      transform: rotate(-15deg); }
 
   /*猫紹介*/
   .content__img {

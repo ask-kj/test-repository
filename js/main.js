@@ -30,3 +30,23 @@ swiperのjs
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  // let hover = document.getElementsByClassName('')
+
+
+  let hoverimgs = document.getElementsByClassName('introduce__item__img');
+  hoverimgs = Array.from(hoverimgs);
+
+  console.log(hoverimgs);
+ hoverimgs.forEach(function(hoverimg) {
+
+  hoverimg.addEventListener('mouseenter', function() {
+    hoverimg.parent().parent().getElementByTagName("p").classList.add('lean');
+ });
+ 
+ hoverimg.addEventListener('mouseleave', function() {
+    hoverimg.classList.remove('lean');
+ });
+})
+  
