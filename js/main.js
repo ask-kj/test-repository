@@ -31,22 +31,20 @@ swiperのjs
     },
   });
 
-
-  // let hover = document.getElementsByClassName('')
-
-
+/*===============================================
+紹介の写真をホバーすると文字が傾く
+===============================================*/
   let hoverimgs = document.getElementsByClassName('introduce__item__img');
   hoverimgs = Array.from(hoverimgs);
 
-  console.log(hoverimgs);
- hoverimgs.forEach(function(hoverimg) {
+  hoverimgs.forEach(function(hoverimg) {
 
   hoverimg.addEventListener('mouseenter', function() {
-    hoverimg.parent().parent().getElementByTagName("p").classList.add('lean');
- });
- 
- hoverimg.addEventListener('mouseleave', function() {
-    hoverimg.classList.remove('lean');
- });
-})
-  
+    hoverimg.parentNode.parentNode.lastElementChild.classList.add('lean');
+  });
+
+  hoverimg.addEventListener('mouseleave', function() {
+    hoverimg.parentNode.parentNode.lastElementChild.classList.remove('lean');
+  });
+});
+
