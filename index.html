@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="description" content="猫たちのかわいい顔">
     <title>猫紹介</title>
@@ -16,82 +16,77 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/22b9c35e93.js" crossorigin="anonymous"></script>
-    </head>
+  </head>
 
-    <body>
-        <header class="header">
-            <h1 class="title wow animate__heartBeat" data-wow-iteration="infinite"><a href="index.html">Cat's</a></h1>
-            <nav class="nav">
-                <a href="#introduce">INTRODUCE</a>
-                <a href="ku.html">KU</a>
-                <a href="pon.html">PON</a>
-                <a href="cosmo.html">COSMO</a>
-            </nav>
-        </header>
-
-        <!-- main-visual -->
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/ku1.jpg" alt="くろねこ"></div>
-                <div class="swiper-slide"><img src="img/pon2.jpg" alt="さばねこ"></div>
-                <div class="swiper-slide"><img src="img/cosmo4.jpg" alt="くろねこ"></div>
-            </div>
-            <div class="swiper-pagination"></div>
+  <body>
+    <header class="header">
+      <h1 class="title wow animate__heartBeat" data-wow-iteration="infinite"><a href="index.html">Cat's</a></h1>
+      <nav class="nav">
+        <a href="#introduce">INTRODUCE</a>
+        <a href="ku.html">KU</a>
+        <a href="pon.html">PON</a>
+        <a href="cosmo.html">COSMO</a>
+      </nav>
+    </header>
+    <!-- main-visual -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/ku1.jpg" alt="くろねこ"></div>
+        <div class="swiper-slide"><img src="img/pon2.jpg" alt="さばねこ"></div>
+        <div class="swiper-slide"><img src="img/cosmo4.jpg" alt="くろねこ"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- ３匹の紹介部分 -->
+    <section id="introduce">
+      <h2 class="sub-title wow animate__fadeInUp" data-wow-delay=".5s">INTRODUCE</h2>
+      <!-- 3枚の紹介写真 -->
+      <div class="introduce wow animate__fadeInUp" data-wow-delay=".5s">
+        <div class="introduce__item">
+          <a href="ku.html">
+            <img class="introduce__item__img" src="img/ku2.jpg" alt="黒猫">
+          </a>
+          <p class="introduce__item__name">KU</p>
         </div>
+        <div class="introduce__item">
+          <a href="pon.html">
+            <img class="introduce__item__img" src="img/pon5.jpg" alt="鯖猫">
+          </a>
+          <p class="introduce__item__name">PON</p>
+        </div>
+        <div class="introduce__item">
+          <a href="cosmo.html">
+            <img class="introduce__item__img" src="img/cosmo4.jpg" alt="長毛黒猫">
+          </a>
+          <p class="introduce__item__name">COSMO</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+        <h1 class="footer__title">
+          <a href="index.html">Cat's</a>
+        </h1>
+        <nav class="footer__nav">
+          <a href="#introduce">INTRODUCE</a>
+          <a href="ku.html">KU</a>
+          <a href="pon.html">PON</a>
+          <a href="cosmo.html">COSMO</a>
+        </nav>
+    </footer>
 
-        <!-- ３匹の紹介部分 -->
-        <section id="introduce">
-            <h2 class="sub-title wow animate__fadeInUp" data-wow-delay=".5s">INTRODUCE</h2>
-            <!-- 3枚の紹介写真 -->
-            <div class="introduce wow animate__fadeInUp" data-wow-delay=".5s">
-                <div class="introduce__item">
-                    <a href="ku.html">
-                        <img class="introduce__item__img" src="img/ku2.jpg" alt="黒猫">
-                    </a>
-                    <p class="introduce__item__name">KU</p>
-                </div>
-
-                <div class="introduce__item">
-                    <a href="pon.html">
-                        <img class="introduce__item__img" src="img/pon5.jpg" alt="鯖猫">
-                    </a>
-                    <p class="introduce__item__name">PON</p>
-                </div>
-
-                <div class="introduce__item">
-                    <a href="cosmo.html">
-                        <img class="introduce__item__img" src="img/cosmo4.jpg" alt="長毛黒猫">
-                    </a>
-                    <p class="introduce__item__name">COSMO</p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <h1 class="footer__title">
-                <a href="index.html">Cat's</a>
-            </h1>
-            <nav class="footer__nav">
-                <a href="#introduce">INTRODUCE</a>
-                <a href="ku.html">KU</a>
-                <a href="pon.html">PON</a>
-                <a href="cosmo.html">COSMO</a>
-            </nav>
-        </footer>
-
-        <!-- js -->
-        <script src="js/wow.min.js"></script>
-        <script>
-            wow = new WOW(
-                {
-                    animateClass: 'animate__animated'
-                }
-                )
-                wow.init();
-        </script>
-        <script src="js/swiper.min.js"></script>
-        <script src="js/luminous.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <!-- js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW(
+        {
+          animateClass: 'animate__animated'
+        }
+        )
+        wow.init();
+    </script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/luminous.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

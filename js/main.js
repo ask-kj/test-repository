@@ -3,7 +3,7 @@ luminousのjs
 ===================================*/
 //querySelectorAll() で全ての luminous2 クラスを指定した a 要素を取得
 const luminousGalleryElems = document.querySelectorAll('.luminous');
-  
+
 //取得した要素の数が 0 より大きければ
 if( luminousGalleryElems.length > 0 ) {
   // LuminousGallery で初期化
@@ -40,11 +40,10 @@ swiperのjs
   hoverimgs.forEach(function(hoverimg) {
 
   hoverimg.addEventListener('mouseenter', function() {
-    hoverimg.parentNode.parentNode.lastElementChild.classList.add('lean');
+    hoverimg.parentNode.parentNode.getElementsByTagName('p')[0].classList.add('lean');
   });
 
   hoverimg.addEventListener('mouseleave', function() {
-    hoverimg.parentNode.parentNode.lastElementChild.classList.remove('lean');
+    hoverimg.parentNode.parentNode.getElementsByTagName('p')[0].classList.remove('lean');
   });
 });
-
